@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: Helvetica;
+  font-size: 32px;
+  color: #1d1f11;
+  background: linear-gradient(45deg, rgb(92, 182, 226), rgb(41, 127, 163), rgb(29, 95, 157), rgb(14, 87, 182));
+}
+
+div {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding: 25px;
+  margin: 20px;
+  font-family: Helvetica;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+div1 {
+  background-image: url(images/rektguy1.gif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div2 {
+  background-image: url(images/rektguy2.gif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  transition: --offset 300ms, text-decoration-color 300ms;
+}
+
+a:link, a:visited {
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  -webkit-text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+          text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: -webkit-text-decoration-color 300ms;
+  transition: text-decoration-color 300ms;
+  transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
+  display: inline-block;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  align-content: center;
+  align-self: auto;
+  border-style: solid;
+  border-color: #d1d1d1;
+  height: 120px;
+  width: 575px;
+  margin: 20px;
+  padding: 25px;
+  display: inline-block;
+  border-width: 7px;
+  box-sizing: border-box;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #c1c1c1;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: #e2e2e2;
+  transform-origin: center;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.hover1-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover1-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.5s ease-out;
+}
+
+.hover1-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.content {
+  position: relatve;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 48px;
+  position: absolute;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #faabaa;
+}
+
+.content h2:nth-child(2) {
+  color: #ff0400;
+  -webkit-animation: animate 2s ease-in-out infinite;
+          animation: animate 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+#main-content {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  color: #888888;
+}
+
+a {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #008A68;
+}
+
+svg {
+  cursor: pointer;
+  overflow: visible;
+  width: 60px;
+}
+svg #heart {
+  transform-origin: center;
+  -webkit-animation: animateHeartOut 0.3s linear forwards;
+          animation: animateHeartOut 0.3s linear forwards;
+}
+svg #main-circ {
+  transform-origin: 29.5px 29.5px;
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked + label svg #heart {
+  transform: scale(0.2);
+  fill: #E2264D;
+  -webkit-animation: animateHeart 0.3s linear forwards 0.25s;
+          animation: animateHeart 0.3s linear forwards 0.25s;
+}
+#checkbox:checked + label svg #main-circ {
+  transition: all 2s;
+  -webkit-animation: animateCircle 0.3s linear forwards;
+          animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+#checkbox:checked + label svg #grp1 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp1 #oval1 {
+  transform: scale(0) translate(0, -30px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp1 #oval2 {
+  transform: scale(0) translate(10px, -50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp2 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp2 #oval1 {
+  transform: scale(0) translate(30px, -15px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp2 #oval2 {
+  transform: scale(0) translate(60px, -15px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp3 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp3 #oval1 {
+  transform: scale(0) translate(30px, 0px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp3 #oval2 {
+  transform: scale(0) translate(60px, 10px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp4 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp4 #oval1 {
+  transform: scale(0) translate(30px, 15px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp4 #oval2 {
+  transform: scale(0) translate(40px, 50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp5 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp5 #oval1 {
+  transform: scale(0) translate(-10px, 20px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp5 #oval2 {
+  transform: scale(0) translate(-60px, 30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp6 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp6 #oval1 {
+  transform: scale(0) translate(-30px, 0px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp6 #oval2 {
+  transform: scale(0) translate(-60px, -5px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp7 {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+#checkbox:checked + label svg #grp7 #oval1 {
+  transform: scale(0) translate(-30px, -15px);
+  transform-origin: 0 0 0;
+  transition: 0.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp7 #oval2 {
+  transform: scale(0) translate(-55px, -30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform 0.3s;
+}
+#checkbox:checked + label svg #grp2 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp3 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp4 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp5 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp6 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+#checkbox:checked + label svg #grp7 {
+  opacity: 1;
+  transition: 0.1s opacity 0.3s;
+}
+
+@-webkit-keyframes animateCircle {
+  40% {
+    transform: scale(10);
+    opacity: 1;
+    fill: #DD4688;
+  }
+  55% {
+    transform: scale(11);
+    opacity: 1;
+    fill: #D46ABF;
+  }
+  65% {
+    transform: scale(12);
+    opacity: 1;
+    fill: #CC8EF5;
+  }
+  75% {
+    transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0.5;
+  }
+  85% {
+    transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0.2;
+  }
+  95% {
+    transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0.1;
+  }
+  100% {
+    transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0;
+  }
+}
+
+@keyframes animateCircle {
+  40% {
+    transform: scale(10);
+    opacity: 1;
+    fill: #DD4688;
+  }
+  55% {
+    transform: scale(11);
+    opacity: 1;
+    fill: #D46ABF;
+  }
+  65% {
+    transform: scale(12);
+    opacity: 1;
+    fill: #CC8EF5;
+  }
+  75% {
+    transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0.5;
+  }
+  85% {
+    transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0.2;
+  }
+  95% {
+    transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0.1;
+  }
+  100% {
+    transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0;
+  }
+}
+@-webkit-keyframes animateHeart {
+  0% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animateHeart {
+  0% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes animateHeartOut {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animateHeartOut {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=stylespage3.css.map */

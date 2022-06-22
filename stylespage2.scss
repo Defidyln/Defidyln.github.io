@@ -19,7 +19,7 @@
 body{
     margin: 0;
     padding: 1rem;
-    font-family:  Verdana;
+    font-family:  Helvetica;
     font-size: 32px;
     color: #1d1f11;
     background: linear-gradient(45deg, rgb(92, 182, 226), rgb(41, 127, 163), rgb(29, 95, 157), rgb(14, 87, 182));
@@ -60,20 +60,17 @@ div {
   }
 
   a:link, a:visited {
-    background: linear-gradient(45deg, rgb(113, 179, 203), rgb(108, 170, 195), rgb(109, 142, 206), rgb(121, 215, 209));
-    color: white;
+   color: white;
     padding: 20px 30px;
     text-align: center;
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     transition: text-decoration-color 300ms;
     display: inline-block;
-    border-radius: 50%;
   }
 
 
   p{
-    background: linear-gradient(45deg, rgb(113, 179, 203), rgb(108, 170, 195), rgb(109, 142, 206), rgb(121, 215, 209));
-    font-family:Verdana;
+    font-family:Helvetica;
     font-size:24px;
     color:#ffffff;
     text-align:center;
