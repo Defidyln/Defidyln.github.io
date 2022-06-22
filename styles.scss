@@ -19,10 +19,10 @@
 body{
     margin: 0;
     padding: 1rem;
-    font-family: Verdana;
+    font-family:  Helvetica;
     font-size: 32px;
     color: #1d1f11;
-    background: linear-gradient(45deg, turquoise, darkorchid, deeppink, orange);
+    background: linear-gradient(45deg, rgb(92, 182, 226), rgb(41, 127, 163), rgb(29, 95, 157), rgb(14, 87, 182));
    
 }
 div {
@@ -32,7 +32,6 @@ div {
     padding: 25px;
     margin: 20px;
     font-family: Helvetica;
-    font-style: oblique;
   } 
   img {
     width: 400px;
@@ -67,9 +66,9 @@ div {
 
   p{
     background: linear-gradient(45deg, rgb(113, 179, 203), rgb(108, 170, 195), rgb(109, 142, 206), rgb(121, 215, 209));
-    font-family:'Courier New';
-    font-size: 44px;
-    color:#ffbcdf;
+    font-family:Helvetica;
+    font-size:24px;
+    color:#ffffff;
     text-align:center;
     align-content: center;
     align-self: auto;
@@ -111,7 +110,7 @@ div {
   .hover1-underline-animation {
     display: inline-block;
     position: relative;
-    color: #e2e2e2;
+    color: rgb(213, 100, 90);
   }
   
   .hover1-underline-animation:after {
@@ -122,7 +121,7 @@ div {
     height: 10px;
     bottom: 0;
     left: 0;
-    background-color: #e2e2e2;
+    background-color: rgb(213, 100, 90);
     transform-origin: center;
     transition: transform 0.5s ease-out;
   }
@@ -132,4 +131,55 @@ div {
     transform-origin: center;
   }
 
-  
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.content {
+  position: relatve;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 48px;
+  position: absolute;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #faabaa;
+}
+
+.content h2:nth-child(2) {
+  color: #ff0400;
+  animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
