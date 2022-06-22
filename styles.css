@@ -77,7 +77,7 @@ a:link, a:visited {
   transition: text-decoration-color 300ms;
   transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 p {
