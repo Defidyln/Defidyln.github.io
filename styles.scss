@@ -5,19 +5,129 @@
     list-style: none;
 }
 
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
 body{
-    padding-left: 100px;
-    padding-right: 100px;
-    border-bottom: 3px;
+    margin: 0;
+    padding: 1rem;
     font-family: Verdana;
     font-size: 32px;
-    color: pink;
-    border-color: black;
-    background-color: plum;
+    color: #1d1f11;
+    background: linear-gradient(45deg, turquoise, darkorchid, deeppink, orange);
+   
 }
 div {
+    text-align: center;
     width: 300px;
-    border: 15px orange;
-    padding: 50px;
+    height: 150px;
+    padding: 25px;
     margin: 20px;
+    font-family: Helvetica;
+    font-style: oblique;
+  } 
+  img {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    max-width:100%;
+    max-height:100%;
+  } 
+  .scale-down {
+    object-fit: scale-down;
+  }
+  div1 {
+    background-image: url(images/rektguy1.gif);
+  } 
+  div2 {
+    background-image: url(images/rektguy2.gif);
+  } 
+  a {
+    transition: --offset 300ms, text-decoration-color 300ms;
+  }
+
+  a:link, a:visited {
+    background: linear-gradient(45deg, rgb(113, 179, 203), rgb(108, 170, 195), rgb(109, 142, 206), rgb(121, 215, 209));
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+    display: inline-block;
+  }
+
+
+  p{
+    background: linear-gradient(45deg, rgb(113, 179, 203), rgb(108, 170, 195), rgb(109, 142, 206), rgb(121, 215, 209));
+    font-family:'Courier New';
+    font-size: 44px;
+    color:#ffbcdf;
+    text-align:center;
+    align-content: center;
+    align-self: auto;
+    border-style: solid;
+    border-color: #d1d1d1;
+    height: 120px;
+    width: 575px;
+    margin: 20px;
+    padding: 25px;
+    display: inline-block;
+    border-width: 7px;
+    box-sizing: border-box;
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #c1c1c1;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #e2e2e2;
+    transform-origin: center;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin:center;
+  }
+
+  .hover1-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #e2e2e2;
+  }
+  
+  .hover1-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #e2e2e2;
+    transform-origin: center;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .hover1-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
   }
