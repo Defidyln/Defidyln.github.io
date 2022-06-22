@@ -6,5 +6,12 @@
 }
 
 body {
+  padding-left: 100px;
+  padding-right: 100px;
+  border-bottom: 3px;
+  font-family: Verdana;
+  font-size: 32px;
+  color: pink;
+  border-color: black;
   background-color: plum;
 }/*# sourceMappingURL=styles.css.map */
